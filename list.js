@@ -60,3 +60,13 @@ TodoView.prototype.addBtnListner = function() {
     this.todoInput.value = "";
   }
 }
+
+var inputField = document.getElementById("input-content");
+
+input.addEventListener("keypress", function(event) {
+  // enter is pressed
+  if (event.key === "Enter") {
+    // click the button "button-add-item"
+    document.getElementById("button-add-item").click();
+  }
+});
